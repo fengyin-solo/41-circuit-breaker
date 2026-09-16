@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>熔断器管理系统</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>熔断器管理系统</h1>
+    <div id="stats" class="stats-grid"></div>
+    <div class="section">
+      <h2>下游服务列表</h2>
+      <table id="service-list">
+        <thead>
+          <tr><th>ID</th><th>名称</th><th>地址</th><th>协议</th><th>状态</th><th>权重</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="section">
+      <h2>熔断器状态</h2>
+      <table id="breaker-list">
+        <thead>
+          <tr><th>ID</th><th>服务 ID</th><th>规则 ID</th><th>状态</th><th>操作</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
